@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">DailyConversor</string>
+    <string name="title">DailyConversor</string>
+    <string name="subtitle">Um conversor de medidas para o seu dia a dia</string>
+    <string name="button_start">Iniciar</string>
+    <string-array name="weight_array">
+        <item>Selecione</item>
+        <item>Quilogramas</item>
+        <item>Gramas</item>
+        <item>Miligramas</item>
+        <item>Toneladas</item>
+        <item>Libras</item>
+        <item>Onças</item>
+    </string-array>
+    <string-array name="distance_array">
+        <item>Selecione</item>
+        <item>Metros</item>
+        <item>Centímetros</item>
+        <item>Milímetros</item>
+        <item>Quilômetros</item>
+        <item>Milhas</item>
+        <item>Jardas</item>
+        <item>Pés</item>
+        <item>Polegadas</item>
+    </string-array>
+    <string-array name="volume_array">
+        <item>Selecione</item>
+        <item>Litros</item>
+        <item>Mililitros</item>
+        <item>Metros cúbicos</item>
+        <item>Centímetros cúbicos</item>
+        <item>Galões</item>
+        <item>Onças fluídas</item>
+        <item>Barris</item>
+    </string-array>
+</resources>
