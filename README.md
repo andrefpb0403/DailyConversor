@@ -1,4 +1,4 @@
-# Calculadora IMC
+# DailyConversor
 Projeto de app Android Nativo, desenvolvido na linguagem de programação Kotlin.
 Tem como objetivo realizar conversões de métricas de 3 diferentes categorias: peso, distância e volume.
 
