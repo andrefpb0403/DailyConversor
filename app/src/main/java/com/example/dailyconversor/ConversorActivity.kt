@@ -22,8 +22,6 @@ class ConversorActivity : AppCompatActivity() {
             insets
         }
 
-        val conversorTitle = findViewById<TextView>(R.id.tv_conversor_title)
-        val conversorSubtitle = findViewById<TextView>(R.id.tv_conversor_subtitle)
         val tvResult = findViewById<TextView>(R.id.tv_conversor_result)
         val tieWeight = findViewById<TextInputEditText>(R.id.tie_weight)
         val tieDistance = findViewById<TextInputEditText>(R.id.tie_distance)
@@ -102,21 +100,24 @@ class ConversorActivity : AppCompatActivity() {
                 val toWeightUnit = spinnerWeight2.selectedItem.toString()
                 val weightValue = inputWeight.toDouble()
                 val weightResult = convertWeight(weightValue, fromWeightUnit, toWeightUnit)
-                tvResult.text = "$weightResult ${spinnerWeight2.selectedItem}"
+                val weightResultFormated = String.format("%.2f", weightResult)
+                tvResult.text = "$weightResultFormated ${spinnerWeight2.selectedItem}"
             }
             if (inputDistance.isNotEmpty()) {
                 val fromDistanceUnit = spinnerDistance1.selectedItem.toString()
                 val toDistanceUnit = spinnerDistance2.selectedItem.toString()
                 val distanceValue = inputDistance.toDouble()
                 val distanceResult = convertDistance(distanceValue, fromDistanceUnit, toDistanceUnit)
-                tvResult.text = "$distanceResult ${spinnerDistance2.selectedItem}"
+                val distanceResultFormated = String.format("%.2f", distanceResult)
+                tvResult.text = "$distanceResultFormated ${spinnerDistance2.selectedItem}"
             }
             if (inputVolume.isNotEmpty()) {
                 val fromVolumeUnit = spinnerVolume1.selectedItem.toString()
                 val toVolumeUnit = spinnerVolume2.selectedItem.toString()
                 val volumeValue = inputVolume.toDouble()
                 val volumeResult = convertVolume(volumeValue, fromVolumeUnit, toVolumeUnit)
-                tvResult.text = "$volumeResult ${spinnerVolume2.selectedItem}"
+                val volumeResultFormated = String.format("%.2f", volumeResult)
+                tvResult.text = "$volumeResultFormated ${spinnerVolume2.selectedItem}"
             }
         }
 
